@@ -1,7 +1,8 @@
 import java.util.*;
 public class time {
-
-  //para fazer uso de qualquer funcao, tem que usar o main
+	
+	int opcao = 0;
+	int opcao2 = 0;
 	
 	Random random;
 	Scanner scanner = new Scanner(System.in);
@@ -17,6 +18,39 @@ public class time {
 	
 	time(){
 		random = new Random();
+		
+		while(true) {
+			escolhas();
+			opcao2 = scanner.nextInt();
+			
+			switch(opcao2) {
+				case 1:
+					jogar();
+				break;
+				
+				case 2:
+					aposta();
+				break;
+				
+				case 3:
+					jogadores();
+				break;
+				
+				case 0:
+					System.out.println("Encerrando o programa...");
+					return;
+					
+				default:
+					System.out.println("Opcao invalida");
+			}
+			
+		}
+	}
+	
+	void escolhas() {
+		System.out.println("Voce escolheu o exercicio sobre time de futebol, o que deseja fazer?");
+		System.out.print("(1)- Jogar ; (2)- Apostar ; (3)- Jogadores ");
+		System.out.println("");
 	}
 	
 	void jogar(){
@@ -40,6 +74,7 @@ public class time {
 		} else {
 			System.out.println("Fodase");
 		}
+		System.out.println("");
 	}
 	
 	void aposta() {
@@ -57,6 +92,7 @@ public class time {
 			quantia = 0;
 			System.out.println("Voce perdeu tudo e o agiota vai lhe buscar");
 		}
+		System.out.println("");
 	}
 	
 	void jogadores() {
@@ -71,6 +107,7 @@ public class time {
 		} else {
 			System.out.println("Vai toma no cu entao");
 		}
+		System.out.println("");
 	}
 
 }
