@@ -9,8 +9,8 @@ public class Main {
 		int opcao2 = 0;
 		
 		time flamengo = new time();
-
-    //pretendo utilizar esse main para acessar todos os exercicios que eu fizer
+		
+		// eu queria fazer com que pudesse logo escolher qual classe eu quero usar, mas acho que não tem como
 		
 		System.out.print("Bom dia, qual exercicio/classe deseja acessar? (28 pra frente) ");
 		opcao = scanner.nextInt();
@@ -30,6 +30,10 @@ public class Main {
 			} else {
 				System.out.println("Opcao invalida");
 			}
+		break;
+		
+		case 31:
+			Elevador elevador = new Elevador();
 		break;
 		
 		
