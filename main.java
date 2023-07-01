@@ -8,7 +8,7 @@ public class Main {
 		int opcao = 0;
 		int opcao2 = 0;
 		
-		time flamengo = new time();
+		
 		
 		// eu queria fazer com que pudesse logo escolher qual classe eu quero usar, mas acho que não tem como
 		
@@ -17,19 +17,7 @@ public class Main {
 		
 		switch(opcao) {
 		case 28:
-			System.out.println("Voce escolheu o exercicio sobre time de futebol, o que deseja fazer?");
-			System.out.print("(1)- Jogar ; (2)- Apostar ; (3)- Jogadores ");
-			opcao2 = scanner.nextInt();
-			
-			if(opcao2 == 1) {
-				flamengo.jogar();
-			} else if(opcao2 == 2) {
-				flamengo.aposta();
-			} else if(opcao2 == 3) {
-				flamengo.jogadores();
-			} else {
-				System.out.println("Opcao invalida");
-			}
+			time flamengo = new time();
 		break;
 		
 		case 31:
