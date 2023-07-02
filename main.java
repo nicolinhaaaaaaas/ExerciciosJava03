@@ -16,6 +16,11 @@ public class Main {
 		case 28:
 			time flamengo = new time();
 		break;
+
+		//não sei se é assim que faz, provavelmente é, mas não sei se gostei
+		case 30:
+			Aluno aluno = new Aluno(opcao2, null, opcao2, opcao2, opcao2);
+		break;
 		
 		case 31:
 			Elevador elevador = new Elevador();
