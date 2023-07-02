@@ -1,7 +1,6 @@
 import java.util.*;
 
 public class Main {
-	
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
@@ -9,8 +8,6 @@ public class Main {
 		int opcao2 = 0;
 		
 		
-		
-		// eu queria fazer com que pudesse logo escolher qual classe eu quero usar, mas acho que não tem como
 		
 		System.out.print("Bom dia, qual exercicio/classe deseja acessar? (28 pra frente) ");
 		opcao = scanner.nextInt();
@@ -22,6 +19,10 @@ public class Main {
 		
 		case 31:
 			Elevador elevador = new Elevador();
+		break;
+		
+		case 33:
+			Lampada lampada = new Lampada();
 		break;
 		
 		
