@@ -7,8 +7,6 @@ public class Main {
 		int opcao = 0;
 		int opcao2 = 0;
 		
-		
-		
 		System.out.print("Bom dia, qual exercicio/classe deseja acessar? (28 pra frente) ");
 		opcao = scanner.nextInt();
 		
@@ -29,7 +27,10 @@ public class Main {
 		case 33:
 			Lampada lampada = new Lampada();
 		break;
-		
+
+		case 37:
+			generico coisa = new generico(a, b, c);
+		break;
 		
 		default:
 			System.out.println("Opcao invalida");
